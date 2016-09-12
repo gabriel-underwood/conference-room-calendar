@@ -19,13 +19,18 @@ Download from: http://nodejs.org/download
 
 **Update NPM and install everything**
 
+Update npm
 `npm –g install npm`
+Install all the packages
 `npm –g install strongloop`
 `npm –g install loopback-connector-mysql`
 `npm –g install loopback-testing`
 `npm –g install mocha`
 `npm -g install bower`
 
+Finally install into the app
+`npm install`
+`bower install angular angular-resource angular-route angular-cookies angular-bootstrap`
 
 ##Running
 Make sure MySQL is running
