@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mySQLDatasource": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "crc",
+    "password": "Quality1",
+    "name": "mySQLDatasource",
+    "user": "crc",
+    "connector": "mysql"
+  }
+}
