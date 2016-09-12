@@ -1,5 +1,11 @@
+DROP USER IF EXISTS ‘crc’@‘localhost’;
+CREATE USER 'crc'@'localhost' IDENTIFIED BY 'crcPassword';
+
+
 DROP DATABASE IF EXISTS `crc`;
 CREATE DATABASE  IF NOT EXISTS `crc`;
+GRANT ALL PRIVILEGES ON `CRC` . * TO 'crc'@'localhost';
+FLUSH PRIVILEGES;
 USE `crc`;
 -- Copyright Gabriel Underwood 2016
 -- NO WARRANTY
