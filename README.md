@@ -46,11 +46,12 @@ In a console:
 `node .`
 
 Open your browser to http://localhost:3000
+Log in as "user1@example.com",  password " " (single space).
 
 ## Loopback Entity Model
 The backend is Loopback to do an OR-mapping from SQL to REST APIs on an entity model.
-There are relationships between the entities, expressed in the [loopback models](commmon\models)
-and as foriegn keys in the SQL tables.
-The loopback models are in .   Use MySQLWorkbench to view the tables.
+There are relationships between the models. For example, see the  [Reservation ](common\models\Reservation.json) model
+and as foreign keys in the SQL tables.
+You can also use MySQLWorkbench to view the tables.
 
 [Here is a diagram](entity_model.JPG?raw=true)

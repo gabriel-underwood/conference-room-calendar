@@ -65,17 +65,18 @@
       }
     });
 
-    primeCurrentUserCache($rootScope,ConferenceRoomUser);
+    //primeCurrentUserCache($rootScope,ConferenceRoomUser);
   }
 
-  run.$inject = ['$rootScope','ConferenceRoomUser'];
+  /*
+  primeCurrentUserCache.$inject = ['$rootScope','ConferenceRoomUser'];
   function primeCurrentUserCache($rootScope, ConferenceRoomUser) {
 
 
     var success = function(value,response) {
 
       console.log('in primeCurrentUserCache Success, curret user is:' + ConferenceRoomUser.getCachedCurrent());
-      $rootScope.$evalAsync();
+      //$rootScope.$evalAsync();
     }
 
     var error = function(err)
@@ -84,6 +85,6 @@
     }
     ConferenceRoomUser.getCurrent( success,error);
   }
-
+  */
 })();
 
