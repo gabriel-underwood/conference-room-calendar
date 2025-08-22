@@ -1,0 +1,21 @@
+{
+  "name": "ConferenceRoomUser",
+  "base": "User",
+  "strict": true,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "rooms": {
+      "type": "hasMany",
+      "model": "Room",
+      "foreignKey": "",
+      "through": "Reservation"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,25 @@
+'use strict';
+
+module.exports = function(app) {
+  /*
+   * The `app` object provides access to a variety of LoopBack resources such as
+   * models (e.g. `app.models.YourModelName`) or data sources (e.g.
+   * `app.datasources.YourDataSource`). See
+   * http://docs.strongloop.com/display/public/LB/Working+with+LoopBack+objects
+   * for more info.
+   */
+
+     var ConferenceRoomUser = app.models.ConferenceRoomUser;
+     ConferenceRoomUser.create({id:1, username: 'Frank', email: 'frank@example.com', password: ' '}, function(err, userInstance) {
+       console.log(userInstance);
+     });
+     ConferenceRoomUser.create({id:2, username: 'Molly', email: 'molly@example.com', password: ' '}, function(err, userInstance) {
+            console.log(userInstance);
+     });
+     ConferenceRoomUser.create({id: 3, username: 'Dave', email: 'dave@example.com', password: ' '}, function(err, userInstance) {
+                 console.log(userInstance);
+          });
+     ConferenceRoomUser.create({id: 4, username: 'Adam', email: 'adam@example.com', password: ' '}, function(err, userInstance) {
+                      console.log(userInstance);
+     });
+};
